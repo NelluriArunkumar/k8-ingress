@@ -1,4 +1,4 @@
-apiVersion: apss/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app2
@@ -61,7 +61,7 @@ spec:
   - host: "app2.arunkumarnelluri.site"
     http:
       paths:
-      - pathType: prefix
+      - pathType: Prefix
         path: "/"
         backend:
           service:
